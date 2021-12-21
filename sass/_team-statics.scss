@@ -1,0 +1,65 @@
+.teams-statics {
+    width: 100%;
+    margin: 78px 10px 64px 10px;
+    .team {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 10px;
+        border: 1px solid rgb(63, 81, 181);
+        .header-line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 64px;
+            font-size: 29px;
+            background-color: rgb(63, 81, 181);
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .first-line {
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+            height: 54px;
+            .row-number,.players,.minute{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-right: 3px solid rgb(63, 81, 181);
+
+            }
+        }
+        // .events-container{
+        //     display: grid;
+        //     grid-template-columns: repeat(15, 1fr);
+        // }
+    }
+}
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 598px;
+    .events {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        &__first-line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             border-right: 2px solid rgb(63, 81, 181);
+        }
+        &__second-line {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border-top: 3px solid rgb(63, 81, 181);
+            
+            &__item {
+                border-right: 3px solid rgb(63, 81, 181);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

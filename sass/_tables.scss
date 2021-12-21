@@ -1,6 +1,60 @@
-.tables{
+.tables {
     border-bottom: 3px solid rgb(63, 81, 181);
     border-top: 3px solid rgb(63, 81, 181);
-
-
+    .scoreboard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 24px;
+            color: hsl(231, 48%, 48%);
+            font-weight: 700;
+        }
+        .teams-scores {
+            width: 72px;
+            height: 72px;
+            background-color: rgb(63, 81, 181);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin: 30px;
+            border-radius: 4px;
+            font-size: 30px;
+        }
+        .divider {
+            font-size: 40px;
+        }
+    }
+    .quarters {
+        display: flex;
+        justify-content: space-around;
+        .quarter {
+            width: 484px;
+            margin-bottom: 20px;
+            border-bottom: 10px solid rgb(63, 81, 181);
+            border-top: 10px solid rgb(63, 81, 181);
+            border-radius: 10px;
+            .first-line {
+                &__container {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    &__item {
+                        text-align: center;
+                        border: 2px solid rgb(63, 81, 181);
+                        padding: 19px;
+                    }
+                }
+            }
+            .second-line__container {
+                display: grid;
+                grid-template-columns: repeat(8, 1fr);
+                &__item {
+                    text-align: center;
+                    border: 2px solid rgb(63, 81, 181);
+                    padding: 19px;
+                }
+            }
+        }
+    }
 }
